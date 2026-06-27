@@ -1,0 +1,84 @@
+{
+  "produtos": [
+    {
+      "id": "1",
+      "nome": "Vaso de Cerâmica Rústico",
+      "preco": 89.90,
+      "descricao": "Vaso artesanal em cerâmica com acabamento rústico, ideal para decoração de ambientes internos e externos.",
+      "disponivel": true,
+      "quantidade": 5,
+      "dimensoes": "20cm x 12cm",
+      "tempoProducao": "Pronto para envio"
+    },
+    {
+      "id": "2",
+      "nome": "Colar de Macramê Boho",
+      "preco": 45.00,
+      "descricao": "Colar feito à mão em fio de algodão natural, estilo boho, perfeito para looks casuais e festivais.",
+      "disponivel": true,
+      "quantidade": 10,
+      "dimensoes": "50cm comprimento",
+      "tempoProducao": "Pronto para envio"
+    },
+    {
+      "id": "3",
+      "nome": "Quadro em Tela — Paisagem Abstrata",
+      "preco": 220.00,
+      "descricao": "Pintura original em tela com tinta acrílica, tema abstrato em tons terrosos. Peça única.",
+      "disponivel": true,
+      "quantidade": 1,
+      "dimensoes": "40cm x 60cm",
+      "tempoProducao": "Pronto para envio"
+    },
+    {
+      "id": "4",
+      "nome": "Brinco de Argila Floral",
+      "preco": 35.00,
+      "descricao": "Par de brincos modelados em argila polimérica com detalhes florais, leves e delicados.",
+      "disponivel": true,
+      "quantidade": 8,
+      "dimensoes": "3cm x 3cm",
+      "tempoProducao": "Pronto para envio"
+    },
+    {
+      "id": "5",
+      "nome": "Cestinha Trançada de Palha",
+      "preco": 65.00,
+      "descricao": "Cestinha trançada à mão em palha natural, ótima para organização ou decoração.",
+      "disponivel": true,
+      "quantidade": 4,
+      "dimensoes": "15cm x 15cm x 10cm",
+      "tempoProducao": "Pronto para envio"
+    },
+    {
+      "id": "6",
+      "nome": "Porta-Velas em Gesso Decorado",
+      "preco": 55.00,
+      "descricao": "Porta-velas esculpido em gesso com texturas geométricas, pintado à mão em dourado e branco.",
+      "disponivel": false,
+      "quantidade": 0,
+      "dimensoes": "8cm x 8cm x 6cm",
+      "tempoProducao": "Sob encomenda em 10 dias"
+    },
+    {
+      "id": "7",
+      "nome": "Pulseira de Miçangas Coloridas",
+      "preco": 25.00,
+      "descricao": "Pulseira artesanal com miçangas importadas, elástico resistente e cores vibrantes.",
+      "disponivel": true,
+      "quantidade": 15,
+      "dimensoes": "Tamanho único",
+      "tempoProducao": "Pronto para envio"
+    },
+    {
+      "id": "8",
+      "nome": "Almofada Bordada à Mão",
+      "preco": 130.00,
+      "descricao": "Almofada com capa bordada à mão em ponto cruz, tecido linho cru, enchimento incluso.",
+      "disponivel": true,
+      "quantidade": 3,
+      "dimensoes": "40cm x 40cm",
+      "tempoProducao": "Sob encomenda em 7 dias"
+    }
+  ]
+}
