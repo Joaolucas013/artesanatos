@@ -16,6 +16,8 @@ export class ProdutoServiceService {
   }
 
   comprarProduto(produto: Artesanato) {
+    console.log(produto);
+    
     const preco = produto.preco.toLocaleString('pt-BR', {
       style: 'currency',
       currency: 'BRL',
@@ -24,6 +26,7 @@ export class ProdutoServiceService {
     const mensagem = encodeURIComponent(
       `Olá, gostaria de saber mais sobre o produto: \n ${produto.nome} por ${preco} `,
     );
+    
     window.open(`https://wa.me/5577998200797?text=${mensagem}`, `_blank`);
   }
 }

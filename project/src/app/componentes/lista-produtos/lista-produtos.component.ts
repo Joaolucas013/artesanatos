@@ -1,26 +1,29 @@
 import { Component, OnInit } from '@angular/core';
 import { Artesanato } from '../../artesanato';
 import { ProdutoServiceService } from '../../produto-service.service';
-import { ProdutoComponent } from "../produto/produto.component";
+import { CurrencyPipe } from '@angular/common';
+import { aumentarBordaTrigger } from '../../animacoes';
 
 @Component({
   selector: 'app-lista-produtos',
-  imports: [ProdutoComponent],
+  imports: [CurrencyPipe],
+  animations: [aumentarBordaTrigger],
   templateUrl: './lista-produtos.component.html',
   styleUrl: './lista-produtos.component.css',
 })
 export class ListaProdutosComponent implements OnInit {
   listaProdutos: Artesanato[] = [];
-
+  indexProduto: number = -1;
+  produto!: Artesanato;
 
   constructor(private service: ProdutoServiceService) {}
   ngOnInit(): void {
-    this.getAll();
-  }
-
-  getAll() {
     this.service.buscarDados().subscribe((lista) => {
       this.listaProdutos = lista;
     });
+  }
+
+  comprar(produto:Artesanato) {
+    this.service.comprarProduto(produto);
   }
 }

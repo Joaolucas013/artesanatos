@@ -1,12 +1,41 @@
+
+@if (listaProdutos.length >0) {
 <div class="lista-produtos">
-  @for (produto of listaProdutos; track $index) {
-    <app-produto [produto]="produto"></app-produto>
+  @for (produto of listaProdutos; track produto.id; let i = $index) {
+    <div class="produto" (mouseover)="indexProduto = i" 
+         [@aumentoDeBorda]="indexProduto === i ? 'aumentarBorda' : 'default'">
+      <div class="produto-dados">
+        <span class="imagem"><img src="banqueta.jpg" alt="" /></span>
+        <span class="nome">{{ produto.nome }}</span>
+        <div class="produto-preco-qtd">
+          <span class="preco">Preço: {{ produto.preco | currency: "BRL" }}</span>
+          <span class="qtd">Quantidade: {{ produto.quantidade }}</span>
+        </div>
+        <div class="produto-disponivel-dimensoes">
+          @if (produto.quantidade == 0) {
+            <span class="disponivel">Disponível: Não</span>
+          }
+          <span class="dimensoes">Dimensões: {{ produto.dimensoes }}</span>
+        </div>
+        <span class="tempo">Tempo de produção: {{ produto.tempoProducao }}</span>
+        <button class="btn" (click)="comprar(produto)">Comprar</button>
+      </div>
+    </div>
   }
 </div>
+} @else {
+<div>
+    <p>Olá, ainda não há produtos. Aguarde.</p>
+</div>
+
+}
+
+
+
 
 <div class="duvidas">
   <h2>TIRE SUAS DÚVIDAS COM A GENTE.</h2>
-  <button>
+  <button class="whats">
     WhatsApp
     <img src="/whats.png" alt="" />
   </button>
