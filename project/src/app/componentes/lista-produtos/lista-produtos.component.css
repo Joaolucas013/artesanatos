@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Fjalla+One&family=Fjord+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Puritan:ital,wght@0,400;0,700;1,400;1,700&family=Unbounded:wght@200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+.lista-produtos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 10px;
+  background-color: rgba(83, 59, 105, 0.677);
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+
+
+@media (min-width: 382px) and (max-width: 430px) {
+  .lista-produtos {
+  
+   margin-left: 30px;
+  
+  }
+}
+
+@media (min-width: 568px) and (max-width: 1200px) {
+  .lista-produtos {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+
+.duvidas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  flex-direction: column;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+h2 {
+  font-family: "Unbounded", sans-serif;
+}
+
+button {
+  display: flex;
+  min-width: 140px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1200px) and (max-width: 1900px) {
+  .lista-produtos {
+    gap: 2px;
+  }
+}
+
+
+@media (min-width: 200px) and (max-width: 420px) {
+
+}

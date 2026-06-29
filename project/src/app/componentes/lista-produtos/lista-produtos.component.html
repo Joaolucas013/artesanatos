@@ -1,0 +1,13 @@
+<div class="lista-produtos">
+  @for (produto of listaProdutos; track $index) {
+    <app-produto [produto]="produto"></app-produto>
+  }
+</div>
+
+<div class="duvidas">
+  <h2>TIRE SUAS DÚVIDAS COM A GENTE.</h2>
+  <button>
+    WhatsApp
+    <img src="/whats.png" alt="" />
+  </button>
+</div>
