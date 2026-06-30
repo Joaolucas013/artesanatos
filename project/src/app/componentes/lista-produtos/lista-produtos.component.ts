@@ -2,12 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { Artesanato } from '../../artesanato';
 import { ProdutoServiceService } from '../../produto-service.service';
 import { CurrencyPipe } from '@angular/common';
-import { aumentarBordaTrigger } from '../../animacoes';
+import { aumentarBordaTrigger, estilizarBotao } from '../../animacoes';
 
 @Component({
   selector: 'app-lista-produtos',
   imports: [CurrencyPipe],
-  animations: [aumentarBordaTrigger],
+  animations: [aumentarBordaTrigger, estilizarBotao],
   templateUrl: './lista-produtos.component.html',
   styleUrl: './lista-produtos.component.css',
 })

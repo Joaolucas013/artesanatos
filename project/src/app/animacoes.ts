@@ -1,4 +1,4 @@
-import { BackgroundColor } from './../../../backend/node_modules/chalk/source/index.d';
+
 import {
   animate,
   state,
@@ -23,12 +23,14 @@ export const aumentarBordaTrigger = trigger('aumentoDeBorda', [
 ]);
 
 
-export const estilizarBotao = trigger("estiloBotao", [
-    state("default", style({})),
-    state("aumentoPadding", style({
-        padding:"5px",
-        backgroundColor:"#000000"
-    })),
-    transition("default => aumentoPadding", animate('100ms ease-out')),
-    transition("aumentoPadding => default", animate('100ms ease-out'))
-])
+export const estilizarBotao = trigger('estiloBotao', [
+  state('default', style({
+    padding:"6px"
+  })),
+  state('aumentoPadding', style({
+    padding: '8px',
+    backgroundColor: 'red',
+  })),
+  transition('default => aumentoPadding', animate('50ms ease-out')),
+  transition('aumentoPadding => default', animate('50ms ease-out')),
+]);

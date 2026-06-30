@@ -18,7 +18,7 @@
           <span class="dimensoes">Dimensões: {{ produto.dimensoes }}</span>
         </div>
         <span class="tempo">Tempo de produção: {{ produto.tempoProducao }}</span>
-        <button class="btn" (click)="comprar(produto)" (mouseover)="indexProduto=i"
+        <button class="btn" (click)="comprar(produto)"
          [@estiloBotao]="indexProduto===i?'aumentoPadding':'default'">Comprar</button>
       </div>
     </div>

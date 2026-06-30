@@ -14,14 +14,9 @@
   width: 100%;
 }
 
-
-
-
 @media (min-width: 382px) and (max-width: 430px) {
   .lista-produtos {
-  
-   margin-left: 30px;
-  
+    margin-left: 30px;
   }
 }
 
@@ -39,8 +34,6 @@
   font-size: 12px;
   flex-direction: column;
 }
-
-
 
 h2 {
   font-family: "Unbounded", sans-serif;
@@ -60,28 +53,22 @@ h2 {
 
 @media (min-width: 1200px) and (max-width: 1900px) {
   .lista-produtos {
-    gap: 2px;
+    gap: 200px;
   }
 }
 
-
 @media (min-width: 200px) and (max-width: 420px) {
-
 }
 
-
-
 .produto {
-
   padding: 4px;
   border-radius: 12px;
   width: 50%;
   background-color: #fdf6ec;
   min-width: 200px;
   max-width: 200px;
-   min-height: 240px;
+  min-height: 240px;
   margin: 14px 0 10px 0;
- 
 }
 
 .imagem {
@@ -104,7 +91,7 @@ h2 {
 }
 
 .img-whats {
-    width: 30px;
+  width: 30px;
 }
 
 .nome,
@@ -158,11 +145,10 @@ h2 {
   border: 1px solid #8d6e63;
   border-radius: 5px;
   background-color: #a0522d;
-  padding: 4px;
   color: white;
   font-weight: bold;
   font-size: 16px;
-   cursor: pointer;
+  cursor: pointer;
   text-align: center;
 }
 
@@ -170,7 +156,7 @@ h2 {
   .produto {
     min-width: 320px;
     max-width: 340px;
-      min-height: 350px;
+    min-height: 350px;
   }
 }
 
@@ -178,7 +164,7 @@ h2 {
   .produto {
     min-width: 260px;
     max-width: 260px;
-      min-height: 400px;
+    min-height: 400px;
   }
 
   .imagem {
@@ -192,24 +178,17 @@ h2 {
 }
 
 @media (min-width: 1200px) and (max-width: 1900px) {
- .produto {
+  .produto {
     min-width: 280px;
     max-width: 280px;
     min-height: 420px;
   }
-
-
 }
 
-
-
 @media (min-width: 1900px) and (max-width: 4000px) {
- .produto {
+  .produto {
     min-width: 280px;
     max-width: 280px;
     height: 420px;
   }
-
-
 }
-
