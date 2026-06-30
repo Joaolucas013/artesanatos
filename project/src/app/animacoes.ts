@@ -21,3 +21,14 @@ export const aumentarBordaTrigger = trigger('aumentoDeBorda', [
   transition('default => aumentarBorda', animate('100ms ease-out')),
   transition('aumentarBorda => default', animate('200ms ease-in')),
 ]);
+
+
+export const estilizarBotao = trigger("estiloBotao", [
+    state("default", style({})),
+    state("aumentoPadding", style({
+        padding:"5px",
+        backgroundColor:"#000000"
+    })),
+    transition("default => aumentoPadding", animate('100ms ease-out')),
+    transition("aumentoPadding => default", animate('100ms ease-out'))
+])
