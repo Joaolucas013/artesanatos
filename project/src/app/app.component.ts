@@ -11,5 +11,5 @@ import { ListaProdutosComponent } from "./componentes/lista-produtos/lista-produ
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'project';
+
 }

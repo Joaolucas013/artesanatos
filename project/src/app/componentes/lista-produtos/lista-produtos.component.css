@@ -40,14 +40,7 @@
   flex-direction: column;
 }
 
-button {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 2px;
-}
+
 
 h2 {
   font-family: "Unbounded", sans-serif;
@@ -55,9 +48,14 @@ h2 {
 
 .whats {
   display: flex;
-  min-width: 140px;
+  min-width: 180px;
   align-items: center;
   justify-content: center;
+  gap: 4px;
+  padding: 4px;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 @media (min-width: 1200px) and (max-width: 1900px) {
@@ -101,8 +99,12 @@ h2 {
   background-color: white;
 }
 
-img {
+.imagem-produto {
   width: 130px;
+}
+
+.img-whats {
+    width: 30px;
 }
 
 .nome,

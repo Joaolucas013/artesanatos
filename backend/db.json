@@ -39,7 +39,46 @@
       "quantidade": 8,
       "dimensoes": "3cm x 3cm",
       "tempoProducao": "Pronto para envio"
+    },
+    {
+      "id": "5",
+      "nome": "Cestinha Trançada de Palha",
+      "preco": 65.00,
+      "descricao": "Cestinha trançada à mão em palha natural, ótima para organização ou decoração.",
+      "disponivel": true,
+      "quantidade": 4,
+      "dimensoes": "15cm x 15cm x 10cm",
+      "tempoProducao": "Pronto para envio"
+    },
+    {
+      "id": "6",
+      "nome": "Porta-Velas em Gesso Decorado",
+      "preco": 55.00,
+      "descricao": "Porta-velas esculpido em gesso com texturas geométricas, pintado à mão em dourado e branco.",
+      "disponivel": false,
+      "quantidade": 10,
+      "dimensoes": "8cm x 8cm x 6cm",
+      "tempoProducao": "Sob encomenda em 10 dias"
+    },
+    {
+      "id": "7",
+      "nome": "Pulseira de Miçangas Coloridas",
+      "preco": 25.00,
+      "descricao": "Pulseira artesanal com miçangas importadas, elástico resistente e cores vibrantes.",
+      "disponivel": true,
+      "quantidade": 15,
+      "dimensoes": "Tamanho único",
+      "tempoProducao": "Pronto para envio"
+    },
+    {
+      "id": "8",
+      "nome": "Almofada Bordada à Mão",
+      "preco": 130.00,
+      "descricao": "Almofada com capa bordada à mão em ponto cruz, tecido linho cru, enchimento incluso.",
+      "disponivel": true,
+      "quantidade": 3,
+      "dimensoes": "40cm x 40cm",
+      "tempoProducao": "Sob encomenda em 7 dias"
     }
-    
   ]
 }

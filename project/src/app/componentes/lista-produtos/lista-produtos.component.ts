@@ -23,7 +23,15 @@ export class ListaProdutosComponent implements OnInit {
     });
   }
 
-  comprar(produto:Artesanato) {
+  comprar(produto: Artesanato) {
     this.service.comprarProduto(produto);
+  }
+
+  irAoWhats() {
+    const mensagem = encodeURIComponent(
+      `Olá, gostaria de saber mais sobre os produtos.`,
+    );
+
+    window.open(`https://wa.me/5577998200797?text=${mensagem}`, `_blank`);
   }
 }

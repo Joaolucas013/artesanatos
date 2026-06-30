@@ -5,7 +5,7 @@
     <div class="produto" (mouseover)="indexProduto = i" 
          [@aumentoDeBorda]="indexProduto === i ? 'aumentarBorda' : 'default'">
       <div class="produto-dados">
-        <span class="imagem"><img src="banqueta.jpg" alt="" /></span>
+        <span class="imagem"><img class="imagem-produto" src="banqueta.jpg" alt="" /></span>
         <span class="nome">{{ produto.nome }}</span>
         <div class="produto-preco-qtd">
           <span class="preco">Preço: {{ produto.preco | currency: "BRL" }}</span>
@@ -30,13 +30,10 @@
 
 }
 
-
-
-
 <div class="duvidas">
   <h2>TIRE SUAS DÚVIDAS COM A GENTE.</h2>
-  <button class="whats">
+  <button class="whats" (click)="irAoWhats()">
     WhatsApp
-    <img src="/whats.png" alt="" />
+    <img src="/whats.png" alt="imagem do whatsApp" class="img-whats"/>
   </button>
 </div>
