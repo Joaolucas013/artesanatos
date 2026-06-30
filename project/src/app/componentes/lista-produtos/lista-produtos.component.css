@@ -5,7 +5,7 @@
 .lista-produtos {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   gap: 5px;
   border-radius: 10px;
@@ -53,7 +53,7 @@ h2 {
 
 @media (min-width: 1200px) and (max-width: 1900px) {
   .lista-produtos {
-    gap: 200px;
+    gap: 40px; /* era 20px */
   }
 }
 
@@ -64,11 +64,12 @@ h2 {
   padding: 4px;
   border-radius: 12px;
   width: 50%;
+  padding: 4px;
   background-color: #fdf6ec;
   min-width: 200px;
   max-width: 200px;
   min-height: 240px;
-  margin: 14px 0 10px 0;
+  margin: 14px 5px 20px 14px;
 }
 
 .imagem {
@@ -149,6 +150,7 @@ h2 {
   font-weight: bold;
   font-size: 16px;
   cursor: pointer;
+   padding: 4px;
   text-align: center;
 }
 
