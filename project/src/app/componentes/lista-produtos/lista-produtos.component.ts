@@ -3,10 +3,12 @@ import { Artesanato } from '../../artesanato';
 import { ProdutoServiceService } from '../../produto-service.service';
 import { CurrencyPipe } from '@angular/common';
 import { aumentarBordaTrigger, estilizarBotao } from '../../animacoes';
+import { QuantidadeDirective } from '../../quantidade.directive';
+import { ValorDirective } from '../../valor.directive';
 
 @Component({
   selector: 'app-lista-produtos',
-  imports: [CurrencyPipe],
+  imports: [CurrencyPipe, QuantidadeDirective, ValorDirective],
   animations: [aumentarBordaTrigger, estilizarBotao],
   templateUrl: './lista-produtos.component.html',
   styleUrl: './lista-produtos.component.css',

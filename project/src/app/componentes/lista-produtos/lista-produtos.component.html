@@ -8,8 +8,8 @@
         <span class="imagem"><img class="imagem-produto" src="banqueta.jpg" alt="" /></span>
         <span class="nome">{{ produto.nome }}</span>
         <div class="produto-preco-qtd">
-          <span class="preco">Preço: {{ produto.preco | currency: "BRL" }}</span>
-          <span class="qtd">Quantidade: {{ produto.quantidade }}</span>
+          <span class="preco" [appValor]="produto.preco">Preço: {{ produto.preco | currency: "BRL" }}</span>
+          <span class="qtd" [appQuantidade]="produto.quantidade">Quantidade: {{ produto.quantidade }}</span>
         </div>
         <div class="produto-disponivel-dimensoes">
           @if (produto.quantidade == 0) {
