@@ -18,22 +18,8 @@ Catálogo online de produtos artesanais, desenvolvido para facilitar a divulgaç
 - **JSON Server** — API REST fake para desenvolvimento local
 - **CurrencyPipe** — formatação de preços em Real (BRL)
 
-## 📁 Estrutura do projeto
 
-```
-loja/
-├── backend/              # API local com json-server
-│   ├── db.json           # base de dados dos produtos
-│   └── package.json
-└── project/               # aplicação Angular
-    └── src/
-        └── app/
-            ├── componentes/
-            │   └── lista-produtos/
-            ├── artesanato.ts          # interface do produto
-            ├── produto-service.service.ts
-            └── animacoes.ts          # triggers de animação
-```
+
 
 ## 🚀 Como rodar o projeto
 
