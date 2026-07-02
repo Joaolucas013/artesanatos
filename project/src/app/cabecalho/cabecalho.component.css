@@ -28,7 +28,7 @@
 }
 
 .destaque {
-  color: #b8f41f;
+  color: rgb(77, 26, 129);
   font-family: "Poppins", sans-serif;
 }
 
@@ -104,13 +104,11 @@ h2 {
 
 
 @media (min-width: 400px) and (max-width: 470px) {
-  .sessao-1 {
-    width: 433px;
+
+    .apresentacao {
+    max-width: 410px;
   }
 
-  .apresentacao {
-    width: 500px;
-  }
 
   .texto-principal {
     font-size: 25px;
