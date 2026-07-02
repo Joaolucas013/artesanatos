@@ -1,7 +1,9 @@
-{
-  "produtos": [
+import { Artesanato } from "../../artesanato";
+
+  export const produtos:Artesanato[] = 
+[
     {
-  "id": "1",
+  "id": 1,
   "nome": "Vaso Decorativo Coração",
   "preco": 79.90,
   "descricao": "Vaso decorativo artesanal com suporte em formato de coração e acabamento marrom texturizado.",
@@ -16,7 +18,7 @@
       ]
 },
 {
-  "id": "2",
+  "id": 2,
   "nome": "Vaso Decorativo Alto Texturizado",
   "preco": 119.90,
   "descricao": "Vaso decorativo artesanal de formato cilíndrico, com acabamento texturizado e pintura em tom amarelo mostarda. Ideal para compor a decoração de salas, halls, varandas e ambientes internos, podendo ser utilizado com flores artificiais, folhagens ou plantas ornamentais.",
@@ -35,7 +37,7 @@
   ]
 },
 {
-  "id": "3",
+  "id":3,
   "nome": "Centro de Mesa Mãos Douradas",
   "preco": 140.00,
   "descricao": "Peça decorativa artesanal composta por uma base em formato de mãos sustentando um recipiente com acabamento texturizado. Ideal para decorar salas, halls de entrada, mesas de centro e aparadores.",
@@ -50,7 +52,7 @@
   ]
 },
 {
-  "id": "4",
+  "id":4,
   "nome": "Vaso Decorativo Alto",
   "preco": 120.00,
   "descricao": "Vaso decorativo artesanal de formato arredondado com acabamento texturizado na cor preta. Acompanha prato de apoio e é ideal para o cultivo de plantas ornamentais ou composição de ambientes internos e externos cobertos.",
@@ -64,7 +66,7 @@
   ]
 },
 {
-  "id": "5",
+  "id": 5,
   "nome": "Vaso Decorativo Taça Rústica",
   "preco": 240.00,
   "descricao": "Vaso decorativo artesanal em formato de taça, com base inspirada em tronco de árvore e acabamento texturizado em tom dourado. Ideal para compor a decoração de salas, halls de entrada, varandas e ambientes sofisticados, podendo ser utilizado com flores, arranjos artificiais ou plantas ornamentais.",
@@ -78,7 +80,7 @@
   ]
 },
 {
-  "id": "6",
+  "id": 6,
   "nome": "Vaso Decorativo Borda Orgânica",
   "preco": 120.00,
   "descricao": "Vaso decorativo artesanal com bordas irregulares e acabamento texturizado em tom terracota. Seu design orgânico proporciona um visual rústico e elegante, sendo ideal para flores, folhagens, plantas ornamentais ou como peça decorativa em diversos ambientes.",
@@ -92,7 +94,7 @@
   ]
 },
 {
-  "id": "7",
+  "id": 7,
   "nome": "Vaso Decorativo Clássico Mostarda",
   "preco": 130.00,
   "descricao": "Vaso decorativo artesanal de formato clássico com acabamento texturizado na cor mostarda. Acompanha prato de apoio e é ideal para plantas ornamentais, flores e composição de ambientes internos e externos cobertos.",
@@ -105,7 +107,7 @@
   ]
 },
 {
-  "id": "8",
+  "id": 8,
   "nome": "Vaso Decorativo Dourado Premium",
   "preco": 150.00,
   "descricao": "Vaso decorativo artesanal com acabamento dourado metálico e textura em relevo. Seu design elegante é ideal para valorizar a decoração de salas, halls, escritórios e varandas, podendo ser utilizado com plantas ornamentais ou flores artificiais.",
@@ -118,7 +120,7 @@
   ]
 },
 {
-  "id": "9",
+  "id": 9,
   "nome": "Vaso Decorativo Geométrico Bege",
   "preco": 110.00,
   "descricao": "Vaso decorativo artesanal com acabamento texturizado em tom bege e detalhes geométricos em marrom. Acompanha prato de apoio e é ideal para plantas ornamentais, flores e composição de ambientes internos e externos cobertos.",
@@ -133,4 +135,3 @@
   ]
 }
   ]
-}

@@ -1,7 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Artesanato } from './artesanato';
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
+import { produtos } from './componentes/lista-produtos/produtos';
 
 @Injectable({
   providedIn: 'root',
@@ -9,10 +10,10 @@ import { Observable } from 'rxjs';
 export class ProdutoServiceService {
   private readonly URL = 'http://localhost:3000/produtos';
 
-  constructor(private httpClient: HttpClient) {}
+  constructor() {}
 
   buscarDados(): Observable<Artesanato[]> {
-    return this.httpClient.get<Artesanato[]>(this.URL);
+    return of(produtos)
   }
 
   comprarProduto(produto: Artesanato) {
