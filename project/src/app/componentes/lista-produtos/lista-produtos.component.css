@@ -262,7 +262,25 @@ h2 {
   }
 }
 
-@media (min-width: 668px) and (max-width: 1200px) {
+
+@media (min-width: 568px) and (max-width: 920px) {
+  .lista-produtos {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .produto {
+    min-width: 460px;
+    max-width: 460px;
+    min-height: 650px;
+  }
+
+  .imagem {
+    height: 480px;
+  }
+}
+
+@media (min-width: 920px) and (max-width: 1200px) {
   .lista-produtos {
     justify-content: space-between;
   }
@@ -286,6 +304,8 @@ h2 {
   .lista-produtos {
     justify-content: space-between;
   }
+
+  
 
   .produto {
     min-width: 400px;
