@@ -76,9 +76,36 @@ h2 {
   }
 }
 
+
+@media (min-width: 330px) and (max-width: 400px) {
+ 
+
+
+  .apresentacao {
+    width: 340px;
+  }
+
+  .texto-principal {
+    font-size: 25px;
+    text-align: center;
+    margin: 30px 0px 0px 30px;
+  }
+
+  .texto-secundario {
+    font-size: 22px;
+    line-height: 32px;
+    margin-left: 10px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
+
+
 @media (min-width: 400px) and (max-width: 470px) {
   .sessao-1 {
-    width: 443px;
+    width: 433px;
   }
 
   .apresentacao {
@@ -103,31 +130,7 @@ h2 {
   }
 }
 
-@media (min-width: 330px) and (max-width: 400px) {
-  .sessao-1 {
-    width: 380x;
-  }
 
-  .apresentacao {
-    width: 400px;
-  }
-
-  .texto-principal {
-    font-size: 25px;
-    text-align: center;
-    margin: 30px 0px 0px 30px;
-  }
-
-  .texto-secundario {
-    font-size: 22px;
-    line-height: 32px;
-    margin-left: 10px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-}
 
 
 @media (min-width: 401px) and (max-width: 420px) {

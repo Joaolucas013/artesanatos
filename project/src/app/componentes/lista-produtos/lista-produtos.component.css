@@ -85,8 +85,7 @@ h2 {
 
 .produto-dados {
   display: flex;
-  flex-direction: column;
-  margin: 5px 2px;
+  flex-direction: column; 
   gap: 4px;
   padding: 2px;
 }
@@ -169,16 +168,18 @@ h2 {
   }
 }
 
-@media (min-width: 330px) and (max-width: 400px) {
+@media (min-width: 331px) and (max-width: 400px) {
+ 
   .lista-produtos {
     justify-content: center;
-    margin: 10px 0px 20px 4px;
+    margin-top: 10px;
   }
 
   .produto {
     min-width: 300px;
     max-width: 300px;
     min-height: 420px;
+    margin-right: 10px;
   }
 
   .imagem {
@@ -200,13 +201,16 @@ h2 {
 @media (min-width: 401px) and (max-width: 420px) {
   .lista-produtos {
     justify-content: center;
-    margin: 10px 0px 10px 20px;
+    margin-left: 10px;
+     margin-top: 10px;
+   
   }
 
   .produto {
     min-width: 320px;
     max-width: 320px;
     min-height: 400px;
+     margin-top: 30px;
   }
 
   .imagem {
