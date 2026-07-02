@@ -17,12 +17,29 @@ export class ListaProdutosComponent implements OnInit {
   listaProdutos: Artesanato[] = [];
   indexProduto: number = -1;
   produto!: Artesanato;
+  fotoAtualIndice: number[] = [];
+  private intervalos: any[] = [];
 
   constructor(private service: ProdutoServiceService) {}
   ngOnInit(): void {
     this.service.buscarDados().subscribe((lista) => {
       this.listaProdutos = lista;
     });
+  }
+
+iniciarCarrosel(produto:Artesanato, index:number){
+
+  this.intervalos[index] = setInterval(() => {
+    this.fotoAtualIndice[index] = ((this.fotoAtualIndice[index] || 0) + 1) % produto.fotos.length
+  }, 2000)
+}
+
+
+
+
+  pararCarrossel(index: number) {
+    clearInterval(this.intervalos[index]);
+    this.fotoAtualIndice[index] = 0;
   }
 
   comprar(produto: Artesanato) {
@@ -37,3 +54,5 @@ export class ListaProdutosComponent implements OnInit {
     window.open(`https://wa.me/5577998200797?text=${mensagem}`, `_blank`);
   }
 }
+
+

@@ -5,8 +5,13 @@
     <div class="produto" (mouseover)="indexProduto = i" 
          [@aumentoDeBorda]="indexProduto === i ? 'aumentarBorda' : 'default'">
       <div class="produto-dados">
-        <span class="imagem"><img class="imagem-produto" src="banqueta.jpg" alt="" /></span>
+
+        
+        <span class="imagem" (mouseenter)="iniciarCarrosel(produto, i)" (mouseleave)="pararCarrossel(i)">
+            <img class="imagem-produto" [src]="produto.fotos[fotoAtualIndice[i] || 0]" alt="{{ produto.nome }}" /></span>
         <span class="nome">{{ produto.nome }}</span>
+
+
         <div class="produto-preco-qtd">
           <span class="preco" [appValor]="produto.preco">Preço: {{ produto.preco | currency: "BRL" }}</span>
           <span class="qtd" [appQuantidade]="produto.quantidade">Quantidade: {{ produto.quantidade }}</span>
@@ -25,8 +30,8 @@
   }
 </div>
 } @else {
-<div>
-    <p>Olá, ainda não há produtos. Aguarde.</p>
+<div class="lista-vazia">
+    <p class="lista-vazia-msg">Olá, ainda não há produtos. Aguarde.</p>
 </div>
 
 }

@@ -47,7 +47,38 @@ h2 {
   margin: 0;
 }
 
-@media (min-width: 380px) and (max-width: 568px) {
+@media (min-width: 300px) and (max-width: 330px) {
+  .sessao-1 {
+    width: 353px;
+  }
+
+  .apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .texto-principal {
+    font-size: 25px;
+  }
+
+  .texto-secundario {
+    text-align: justify;
+    font-size: 15px;
+    line-height: 32px;
+    margin: 4px 8px 4px 8px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  hr {
+    min-width: 130px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 470px) {
   .sessao-1 {
     width: 443px;
   }
@@ -74,21 +105,101 @@ h2 {
   }
 }
 
+@media (min-width: 330px) and (max-width: 400px) {
+  .sessao-1 {
+    width: 380x;
+  }
+
+  .apresentacao {
+    width: 400px;
+  }
+
+  .texto-principal {
+    font-size: 25px;
+    text-align: center;
+    margin: 30px 0px 0px 30px;
+  }
+
+  .texto-secundario {
+    font-size: 22px;
+    line-height: 32px;
+    margin-left: 10px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
+
+
+@media (min-width: 401px) and (max-width: 420px) {
+  .apresentacao {
+    width: 430px;
+  }
+
+  .texto-principal {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+
+  h2 {
+    font-size: 23px;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 472px) {
+  .apresentacao {
+    width: 430px;
+  }
+
+  .texto-principal {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+
+  h2 {
+    font-size: 23px;
+  }
+}
+
+
+@media (min-width: 472px) and (max-width: 568px) {
+    .apresentacao {
+    width: 540px;
+  }
+
+  .texto-principal {
+    font-size: 40px;
+    margin-top: 30px;
+  }
+
+  h2 {
+    font-size: 23px;
+  }
+
+  .texto-secundario{
+    font-size: 25px;
+    line-height: 40px;
+  }
+}
+
+
+
 @media (min-width: 568px) and (max-width: 1200px) {
   .texto-principal {
     font-size: 32px;
-
     color: #39211d;
   }
 
   .texto-secundario {
-    font-size: 20px;
+    font-size: 22px;
     line-height: 30px;
   }
 
   h2 {
     font-size: 30px;
   }
+
 }
 
 @media (min-width: 1200px) and (max-width: 1500px) {
@@ -116,7 +227,7 @@ h2 {
 }
 
 hr {
-  min-width: 430px;
+  min-width: 330px;
   border: none;
   height: 2px;
   background-color: rgb(18, 18, 3);
