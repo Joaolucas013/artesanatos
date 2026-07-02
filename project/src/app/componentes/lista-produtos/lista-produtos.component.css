@@ -80,6 +80,7 @@ h2 {
 .qtd,
 .preco {
   font-size: 20px;
+ 
 }
 
 .produto-dados {
@@ -96,13 +97,16 @@ h2 {
   margin-bottom: 4px;
   font-size: 16px;
   font-family: "Unbounded", sans-serif;
+  color: blue
 }
 
 .produto-preco-qtd {
   display: flex;
   justify-content: space-between;
   margin: 2px 0 2px 0;
-  font-size: 20px;
+  font-size: 8px;
+   color: blue;
+ 
 }
 
 .produto-disponivel-dimensoes {
@@ -110,6 +114,7 @@ h2 {
   flex-direction: column;
   gap: 4px;
   font-size: 20px;
+   color: blue;
 }
 
 .dimensoes {
@@ -119,6 +124,7 @@ h2 {
 
 .tempo {
   font-size: 20px;
+  color: rgb(38, 11, 11);
 }
 
 .btn {
