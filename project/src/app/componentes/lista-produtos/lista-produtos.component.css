@@ -394,3 +394,68 @@ h2 {
   text-align: right;
   background-color: wheat;
 }
+
+
+
+
+/* Celulares pequenos */
+
+@media (max-width: 480px) {
+
+  .saiba-mais {
+    width: 95%;
+    padding: 16px;
+  }
+
+  .mais-info {
+    font-size: 1.1rem;
+  }
+
+  .info-fechar {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .botao-sair {
+    width: 100%;
+  }
+
+  .saiba-mais-dados {
+    font-size: .95rem;
+  }
+}
+
+/* Tablets */
+
+@media (min-width: 768px) {
+
+  .saiba-mais {
+    max-width: 600px;
+  }
+
+  .mais-info {
+    font-size: 1.5rem;
+  }
+
+  .saiba-mais-dados {
+    font-size: 1.05rem;
+  }
+}
+
+/* Monitores grandes */
+
+@media (min-width: 1200px) {
+
+  .saiba-mais {
+    max-width: 700px;
+    padding: 28px;
+  }
+
+  .mais-info {
+    font-size: 1.7rem;
+  }
+
+  .saiba-mais-dados {
+    font-size: 1.1rem;
+  }
+}
