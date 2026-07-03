@@ -8,4 +8,10 @@ export interface Artesanato {
   dimensoes: string;
   tempoProducao: string;
   fotos: string[];
+  material: string;
+  cor: string;
+  acabamento: string;
+  uso: string[];
+  ambiente: string[];
+  peso?: string;
 }

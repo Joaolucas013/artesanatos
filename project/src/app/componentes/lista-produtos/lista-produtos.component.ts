@@ -19,6 +19,7 @@ export class ListaProdutosComponent implements OnInit {
   produto!: Artesanato;
   fotoAtualIndice: number[] = [];
   private intervalos: any[] = [];
+  produtoSelecionado?: Artesanato;
 
   constructor(private service: ProdutoServiceService) {}
   ngOnInit(): void {
@@ -27,15 +28,12 @@ export class ListaProdutosComponent implements OnInit {
     });
   }
 
-iniciarCarrosel(produto:Artesanato, index:number){
-
-  this.intervalos[index] = setInterval(() => {
-    this.fotoAtualIndice[index] = ((this.fotoAtualIndice[index] || 0) + 1) % produto.fotos.length
-  }, 2000)
-}
-
-
-
+  iniciarCarrosel(produto: Artesanato, index: number) {
+    this.intervalos[index] = setInterval(() => {
+      this.fotoAtualIndice[index] =
+        ((this.fotoAtualIndice[index] || 0) + 1) % produto.fotos.length;
+    }, 2000);
+  }
 
   pararCarrossel(index: number) {
     clearInterval(this.intervalos[index]);
@@ -46,6 +44,13 @@ iniciarCarrosel(produto:Artesanato, index:number){
     this.service.comprarProduto(produto);
   }
 
+  saberMais(produto: Artesanato) {
+    this.produtoSelecionado = produto;
+  }
+
+  fecharCard() {
+    this.produtoSelecionado = undefined;
+  }
   irAoWhats() {
     const mensagem = encodeURIComponent(
       `Olá, gostaria de saber mais sobre os produtos.`,
@@ -54,5 +59,3 @@ iniciarCarrosel(produto:Artesanato, index:number){
     window.open(`https://wa.me/5577988440731?text=${mensagem}`, `_blank`);
   }
 }
-
-

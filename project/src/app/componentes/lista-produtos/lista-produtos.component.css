@@ -323,3 +323,74 @@ h2 {
     margin-right: 10px;
   }
 }
+
+.botao-saiba-mais {
+  margin: 0 auto;
+  padding: 3px;
+  border-radius: 5px;
+  width: 100px;
+}
+
+.saiba-mais {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 450px;
+    max-width: 80%;
+
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .25);
+
+    z-index: 1000;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(170, 148, 148, 0.45);
+
+    z-index: 999;
+}
+
+.mais-info {
+  text-align: center;
+  font-size: 20px;
+}
+
+.saiba-mais-dados {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+  gap: 4px;
+  margin-left: 3px;
+  margin-top: 10px;
+  background-color: white;
+}
+
+.info-fechar {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+
+.botao-sair {
+  padding: 2px;
+  border-radius: 6px;
+  border: none;
+  text-align: right;
+  background-color: wheat;
+}

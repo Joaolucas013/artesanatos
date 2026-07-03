@@ -1,45 +1,88 @@
-
 @if (listaProdutos.length >0) {
 <div class="lista-produtos">
   @for (produto of listaProdutos; track produto.id; let i = $index) {
-    <div class="produto" (mouseover)="indexProduto = i" 
-         [@aumentoDeBorda]="indexProduto === i ? 'aumentarBorda' : 'default'">
-      <div class="produto-dados">
-
-        
-        <span class="imagem" (mouseenter)="iniciarCarrosel(produto, i)" (mouseleave)="pararCarrossel(i)">
-            <img class="imagem-produto" [src]="produto.fotos[fotoAtualIndice[i] || 0]" alt="{{ produto.nome }}" /></span>
-        <span class="nome">{{ produto.nome }}</span>
+  <div class="produto" (mouseover)="indexProduto = i"
+    [@aumentoDeBorda]="indexProduto === i ? 'aumentarBorda' : 'default'">
+    <div class="produto-dados">
 
 
-        <div class="produto-preco-qtd">
-          <span class="preco" [appValor]="produto.preco">Preço: {{ produto.preco | currency: "BRL" }}</span>
-          <span class="qtd" [appQuantidade]="produto.quantidade">Quantidade: {{ produto.quantidade }}</span>
-        </div>
-        <div class="produto-disponivel-dimensoes">
-          @if (produto.quantidade == 0) {
-            <span class="disponivel">Disponível: Não</span>
-          }
-          <span class="dimensoes">Dimensões: {{ produto.dimensoes }}</span>
-        </div>
-        <span class="tempo">Tempo de produção: {{ produto.tempoProducao }}</span>
-        <button class="btn" (click)="comprar(produto)"
-         [@estiloBotao]="indexProduto===i?'aumentoPadding':'default'">Comprar</button>
+      <span class="imagem" (mouseenter)="iniciarCarrosel(produto, i)" (mouseleave)="pararCarrossel(i)">
+        <img class="imagem-produto" [src]="produto.fotos[fotoAtualIndice[i] || 0]" alt="{{ produto.nome }}" /></span>
+      <span class="nome">{{ produto.nome }}</span>
+
+
+      <div class="produto-preco-qtd">
+        <span class="preco" [appValor]="produto.preco">Preço: {{ produto.preco | currency: "BRL" }}</span>
+        <span class="qtd" [appQuantidade]="produto.quantidade">Quantidade: {{ produto.quantidade }}</span>
       </div>
+      <div class="produto-disponivel-dimensoes">
+        @if (produto.quantidade == 0) {
+        <span class="disponivel">Disponível: Não</span>
+        }
+        <span class="dimensoes">Dimensões: {{ produto.dimensoes }}</span>
+      </div>
+      <span class="tempo">Tempo de produção: {{ produto.tempoProducao }}</span>
+      <button class="botao-saiba-mais" (click)="saberMais(produto)">Saiba Mais</button>
+      <button class="btn" (click)="comprar(produto)"
+        [@estiloBotao]="indexProduto===i?'aumentoPadding':'default'">Comprar</button>
     </div>
+  </div>
   }
 </div>
+
+
 } @else {
 <div class="lista-vazia">
-    <p class="lista-vazia-msg">Olá, ainda não há produtos. Aguarde.</p>
+  <p class="lista-vazia-msg">Olá, ainda não há produtos. Aguarde.</p>
 </div>
 
+}
+
+@if (produtoSelecionado) {
+<div class="overlay" (click)="fecharCard()">
+
+  <div class="saiba-mais" (click)="$event.stopPropagation()">
+
+    <div class="info-fechar">
+      <span class="mais-info">Mais Informações:</span>
+
+      <button class="botao-sair" (click)="fecharCard()">
+        Fechar ❌
+      </button>
+    </div>
+
+    <div class="saiba-mais-dados">
+      <span>Material: {{ produtoSelecionado.material }}</span>
+      <span>Cor: {{ produtoSelecionado.cor }}</span>
+      <span>Acabamento: {{ produtoSelecionado.acabamento }}</span>
+      <span>Uso: {{ produtoSelecionado.uso }}</span>
+      <span>Ambiente: {{ produtoSelecionado.ambiente }}</span>
+
+      @if (produtoSelecionado.peso) {
+        <span>Peso: {{ produtoSelecionado.peso }}</span>
+      }
+    </div>
+
+  </div>
+
+</div>
 }
 
 <div class="duvidas">
   <h2>TIRE SUAS DÚVIDAS COM A GENTE.</h2>
   <button class="whats" (click)="irAoWhats()">
     WhatsApp
-    <img src="/whats.png" alt="imagem do whatsApp" class="img-whats"/>
+    <img src="/whats.png" alt="imagem do whatsApp" class="img-whats" />
   </button>
 </div>
+
+
+
+
+<!-- 
+ material: string;
+  cor: string;
+  acabamento: string;
+  uso: string[];
+  ambiente: string[];
+  peso?: string; -->
