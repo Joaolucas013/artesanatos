@@ -11,9 +11,11 @@ export class ValorDirective {
     effect(() => {
       const valor = this.appValor();
 
-      if(valor < 50){
+      if(valor < 100){
         this.elemento.nativeElement.style.color = "blue"
         this.elemento.nativeElement.style.fontWeight = "bold"
+      } else {
+           this.elemento.nativeElement.style.color = "red"
       }
     });
   }
