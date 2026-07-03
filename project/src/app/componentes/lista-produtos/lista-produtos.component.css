@@ -40,9 +40,6 @@ h2 {
   cursor: pointer;
 }
 
-@media (min-width: 1200px) and (max-width: 1900px) {
-}
-
 .produto {
   padding: 4px;
   border-radius: 12px;
@@ -78,8 +75,8 @@ h2 {
   font-size: 20px;
 }
 
-.qtd{
-   color: rgb(65, 31, 151);
+.qtd {
+  color: rgb(65, 31, 151);
 }
 
 .produto-dados {
@@ -95,7 +92,7 @@ h2 {
   margin-bottom: 4px;
   font-size: 16px;
   font-family: "Unbounded", sans-serif;
- color: rgb(65, 31, 151);
+  color: rgb(65, 31, 151);
 }
 
 .produto-preco-qtd {
@@ -105,13 +102,12 @@ h2 {
   font-size: 8px;
 }
 
-
 .produto-disponivel-dimensoes {
   display: flex;
   flex-direction: column;
   gap: 4px;
   font-size: 20px;
- color: rgb(65, 31, 151);
+  color: rgb(65, 31, 151);
 }
 
 .dimensoes {
@@ -234,13 +230,12 @@ h2 {
 @media (min-width: 472px) and (max-width: 572px) {
   .lista-produtos {
     margin: 0 auto;
-   
   }
 
   .produto {
     min-width: 400px;
     max-width: 400px;
-    margin: 32px auto;  
+    margin: 32px auto;
   }
 
   .imagem {
@@ -312,6 +307,7 @@ h2 {
     min-width: 400px;
     max-width: 400px;
     min-height: 700px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
   }
 
   .imagem {
