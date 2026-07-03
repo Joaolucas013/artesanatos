@@ -1,4 +1,3 @@
-
 .lista-produtos {
   display: flex;
   flex-direction: row;
@@ -42,7 +41,6 @@ h2 {
 }
 
 @media (min-width: 1200px) and (max-width: 1900px) {
-  
 }
 
 .produto {
@@ -78,12 +76,11 @@ h2 {
 .qtd,
 .preco {
   font-size: 20px;
- 
 }
 
 .produto-dados {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   gap: 4px;
   padding: 2px;
 }
@@ -94,7 +91,7 @@ h2 {
   margin-bottom: 4px;
   font-size: 16px;
   font-family: "Unbounded", sans-serif;
-  color: blue
+  color: blue;
 }
 
 .produto-preco-qtd {
@@ -102,8 +99,7 @@ h2 {
   justify-content: space-between;
   margin: 2px 0 2px 0;
   font-size: 8px;
-   color: blue;
- 
+  color: blue;
 }
 
 .produto-disponivel-dimensoes {
@@ -111,7 +107,7 @@ h2 {
   flex-direction: column;
   gap: 4px;
   font-size: 20px;
-   color: blue;
+  color: blue;
 }
 
 .dimensoes {
@@ -167,7 +163,6 @@ h2 {
 }
 
 @media (min-width: 331px) and (max-width: 400px) {
- 
   .lista-produtos {
     justify-content: center;
     margin-top: 10px;
@@ -200,15 +195,14 @@ h2 {
   .lista-produtos {
     justify-content: center;
     margin-right: 2px;
-     margin-top: 10px;
-   
+    margin-top: 10px;
   }
 
   .produto {
     min-width: 320px;
     max-width: 320px;
     min-height: 400px;
-     margin-top: 30px;
+    margin-top: 30px;
   }
 
   .imagem {
@@ -218,14 +212,14 @@ h2 {
 
 @media (min-width: 421px) and (max-width: 472px) {
   .lista-produtos {
-    justify-content: center;
-    margin-left: 0px;
+    margin: 10px auto;
   }
 
   .produto {
     min-width: 340px;
     max-width: 340px;
     min-height: 400px;
+    margin: 22px auto;
   }
 
   .imagem {
@@ -235,14 +229,14 @@ h2 {
 
 @media (min-width: 472px) and (max-width: 572px) {
   .lista-produtos {
-    align-items: center;
-    justify-content: center;
+    margin: 0 auto;
+   
   }
 
   .produto {
     min-width: 400px;
     max-width: 400px;
-    min-height: 100px;
+    margin: 32px auto;  
   }
 
   .imagem {
@@ -252,21 +246,20 @@ h2 {
 
 @media (min-width: 572px) and (max-width: 668px) {
   .lista-produtos {
-    align-items: center;
-    justify-content: center;
+    margin: 20px auto;
   }
 
   .produto {
     min-width: 420px;
     max-width: 420px;
     min-height: 650px;
+    margin: 30px 0 0 0;
   }
 
   .imagem {
     height: 420px;
   }
 }
-
 
 @media (min-width: 568px) and (max-width: 920px) {
   .lista-produtos {
@@ -278,6 +271,7 @@ h2 {
     min-width: 460px;
     max-width: 460px;
     min-height: 650px;
+    margin-top: 30px;
   }
 
   .imagem {
@@ -309,8 +303,6 @@ h2 {
   .lista-produtos {
     justify-content: space-between;
   }
-
-
 
   .produto {
     min-width: 400px;

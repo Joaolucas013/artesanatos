@@ -51,7 +51,7 @@ iniciarCarrosel(produto:Artesanato, index:number){
       `Olá, gostaria de saber mais sobre os produtos.`,
     );
 
-    window.open(`https://wa.me/5577998200797?text=${mensagem}`, `_blank`);
+    window.open(`https://wa.me/5577988440731?text=${mensagem}`, `_blank`);
   }
 }
 
